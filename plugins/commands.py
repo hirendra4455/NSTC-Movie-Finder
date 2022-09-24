@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 @Client.on_message(filters.command("start") & filters.private)
 async def start(bot, cmd):
     usr_cmdall1 = cmd.text
-    if usr_cmdall1.startswith("/start tgmoviedbbot"):
+    if usr_cmdall1.startswith("/start moviesalltime_bot"):
         if AUTH_CHANNEL:
             invite_link = await bot.create_chat_invite_link(int(AUTH_CHANNEL))
             try:
@@ -67,7 +67,7 @@ async def start(bot, cmd):
                 buttons = [
                     [
                         InlineKeyboardButton('Search again', switch_inline_query_current_chat=''),
-                        InlineKeyboardButton('More Bots', url='https://t.me/SLBotsofficial/28')
+                        InlineKeyboardButton('More Bots', url='https://t.me/MoviesAlltime_bot')
                     ]
                 ]
                 await bot.send_cached_media(
@@ -104,10 +104,10 @@ async def start(bot, cmd):
                     ],
                     [
                         InlineKeyboardButton("About", callback_data="about"),
-                        InlineKeyboardButton("Other Bots", url="https://t.me/SLBotsofficial/28")
+                        InlineKeyboardButton("Other Bots", url="https://t.me/moviesalltime_bot")
                     ],
                     [
-                        InlineKeyboardButton("➕ Add Me to your group ➕",url="t.me/tgmoviedbbot?startgroup=true")
+                        InlineKeyboardButton("➕ Add Me to your group ➕",url="t.me/moviesalltimebot?startgroup=true")
                     ]
                 ]
             )
@@ -123,7 +123,7 @@ async def start(bot, cmd):
                 [
                     [
                         InlineKeyboardButton("Search Here", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("Switch to PM", url="t.me/tgmoviedbbot?start=true")
+                        InlineKeyboardButton("Switch to PM", url="t.me/moviesalltime_bot?start=true")
                     ]
                 ]
             )
@@ -212,8 +212,8 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('Bot Update Channel', url='https://t.me/SLBotsOfficial'),
-            InlineKeyboardButton('Movie Updates', url='https://t.me/nstcentertainmentgroup')
+            InlineKeyboardButton('Bot Update Channel', url='https://t.me/moviesalltime_bot'),
+            InlineKeyboardButton('Movie Updates', url='https://t.me/movies_adda_24_71')
         ]
     ]
-    await message.reply(text="<b>This is a clone of [TGMOVIEDB](https://t.me/tgmoviedbbot)\nDeveloper : <a href='https://t.me/TharukRenuja'>Tharuk Renuja</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nBot Update : <a href='https://t.me/SLBotsofficial'>SLBotsOfficial</a>\nMovie Updates : <a href='https://t.me/nstcentertainment'>NSTC Entertainment</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply(text="<b>HI,  [MOVIESADDADB](https://t.me/movies_adda_24_71)\nDeveloper : <a href='https://t.me/thegreyhatguy'>GreyHAtGuy</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nBot Update : <a href='https://t.me/+8zy3BPOAHdsyY2Jl'>MoviesAllTime</a>\nMovie Updates : <a href='https://t.me/movies_adda_24_71'>NSTC Entertainment</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
