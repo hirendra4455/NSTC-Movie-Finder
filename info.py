@@ -11,7 +11,7 @@ BOT_TOKEN = environ['BOT_TOKEN']
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
-USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
+USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', true))
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ['ADMINS'].split()]
@@ -33,6 +33,8 @@ default_start_msg = """
 Here you can search movies in Inline mode as well as PM, Use the below buttons to search movies or send me the name of movie to search.
 """
 START_MSG = environ.get('START_MSG', default_start_msg)
+SHARE_BUTTON_TEXT = 'Checkout {username} for searching files'
+INVITE_MSG = 'Please join @.... to use this bot'
 
 FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "")
 OMDB_API_KEY = environ.get("OMDB_API_KEY", "")
