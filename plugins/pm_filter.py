@@ -122,7 +122,7 @@ async def group(client, message):
                 file_id = file.file_id
                 filename = f"[{get_size(file.file_size)}] {file.file_name}"
                 btn.append(
-                    [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=tgmoviedbbot-_-_-_{file_id}")]
+                    [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=MoviesAlltime_bot-_-_-_{file_id}")]
                 )
         else:
             return
@@ -272,11 +272,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "about":
             buttons = [
                 [
-                    InlineKeyboardButton('Bot Updates', url='https://t.me/SLBotsOfficial'),
-                    InlineKeyboardButton('Movie Updates', url='https://t.me/nstcentertainment')
+                    InlineKeyboardButton('Bot Updates', url='https://t.me/+8zy3BPOAHdsyY2Jl'),
+                    InlineKeyboardButton('Movie Updates', url='https://t.me/movies_adda_24_71')
                 ]
                 ]
-            await query.message.edit(text="<b>This is a clone of [TGMOVIEDB](https://t.me/tgmoviedbbot)\nA project By @SLBotsOfficial👑\n<b>Developer : <a href='https://t.me/TharukRenuja'>Tharuk Renuja</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://github.com/TharukRenuja/NSTC-Movie-Finder'>Click here</a>\nUpdate Channel : <a href='https://t.me/SLBotsOfficial'>SLBotsOfficial</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+            await query.message.edit(text="<b>Hi ,[MOVIESADDADB](https://t.me/moviesalltime_bot)\nA project By @thegreyhatguy👑\n<b>Developer : <a href='https://t.me/thegreyhatguy'>GreyHatGuy</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://github.com/hirendra4455/NSTC-Movie-Finder'>Click here</a>\nUpdate Channel : <a href='https://t.me/+8zy3BPOAHdsyY2Jl'>MOVIESADDAOFFICIAL</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 
 
@@ -297,8 +297,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('Bot Updates', url='https://t.me/SLBotsOfficial'),
-                        InlineKeyboardButton('Movie Updates', url='https://t.me/nstcentertainment')
+                        InlineKeyboardButton('Bot Updates', url='https://t.me/+8zy3BPOAHdsyY2Jl'),
+                        InlineKeyboardButton('Movie Updates', url='https://t.me/movies_adda_24_71')
                     ]
                     ]
                 
@@ -329,8 +329,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{title}"
                 buttons = [
                     [
-                        InlineKeyboardButton('Bot Updates', url='https://t.me/SLBotsOfficial'),
-                        InlineKeyboardButton('Movie Updates', url='https://t.me/nstcentertainment')
+                        InlineKeyboardButton('Bot Updates', url='https://t.me/+8zy3BPOAHdsyY2Jl'),
+                        InlineKeyboardButton('Movie Updates', url='https://t.me/movies_adda_24_71')
                     ]
                     ]
                 
